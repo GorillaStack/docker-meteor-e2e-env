@@ -12,3 +12,5 @@ RUN echo LC_ALL=en_US.UTF-8 >> /etc/default/locale
 RUN curl https://install.meteor.com | sh
 # install grunt
 RUN npm install -g grunt-cli
+# install java for selenium to use
+RUN apt-get --assume-yes install default-jre
